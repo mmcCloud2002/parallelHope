@@ -1,3 +1,440 @@
-body{
-background: (#0232F6);
+/*
+COLORS USED:
+
+#FFFFFF
+#B7E0ED
+#E4F0F4
+#F2F7F9
+#F6D432
+#FFFFFF 0.09
+#0B2F53
+#0232F6
+#D9D9D9
+#0228C3 - 0.68
+#EDC400
+
+.sideNav .centertext .count-down
+*/
+
+
+@font-face {
+    font-family: 'mangoregular';
+    src: url('https://jordanr.co/fonts/__MACOSX/Mango_WebFontKit/mango-webfont.eot');
+    src: url('https://jordanr.co/fonts/__MACOSX/Mango_WebFontKit/mango-webfont.eot?#iefix') format('embedded-opentype'),
+         url('https://jordanr.co/fonts/__MACOSX/Mango_WebFontKit/mango-webfont.woff2') format('woff2'),
+         url('https://jordanr.co/fonts/__MACOSX/Mango_WebFontKit/mango-webfont.woff') format('woff'),
+         url('https://jordanr.co/fonts/__MACOSX/Mango_WebFontKit/mango-webfont.svg#mangoregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
 }
+
+
+/* General Styles */
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: #0232F6;
+    color: white;
+    font: 16px lato, sans-serif;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+a {
+    color: white;
+}
+li {
+    list-style-type: none;
+}
+/* .coming-soon {
+    box-sizing: border-box;
+} */
+
+/* Section Sizes */
+
+/* section {
+    background-color: #0232F6;
+} */
+main {
+    background: #0232F6;
+    height: 80vh;
+}
+.main-container {
+    height: 100%;
+}
+aside {
+    height: 40vh
+}
+span.dot{
+    color: #0232F6 !important;
+    color: red;
+}
+
+/* Custom Styles */
+.headliner{
+    position: absolute;
+}
+
+.eyebrow {
+    font-size: 1.75 rem;
+    color: white;
+    letter-spacing: 3px;
+}
+
+.headline1 {
+    font-family: 'mangoregular';
+    font-weight: 100;
+    letter-spacing: 0.2em;
+    color: #F6D432;
+    font-size: 5rem;
+}
+
+.countdown {
+    color: blue;
+    font-size: 6.25rem;
+}
+.main-container {
+    /* background: green; */
+    height: 30vh;
+    width: 100vw;
+}
+
+
+img.cloud{
+    height: 100px;
+} 
+
+.cloud1 img{
+    height: 161px;
+    width: auto;
+    margin-top: 6em;
+}
+
+.cloud2 img{
+    height: 161px;
+    width: auto;
+    margin-top: 8em;
+    margin-left: 3.5em;
+}
+
+/* Modal Styling */
+.modal-columns {
+    height: 4em;
+}
+.modal-header {
+    background-color: none;
+    border: none;
+    height: 4em;
+    padding: 3em 0em;
+}
+.modal-body{
+    background-color: none;
+    height: 100vh;
+}
+
+
+/* Modal Right Column */
+.modal-right-col {
+    background-color: #0232F6;
+    height: 100vh;
+}
+.right-close-icon {
+    background: none;
+    border: none;
+    margin-right: 4em;
+}
+
+/* Modal Left Column */
+.modal-left-col {
+    background-color: #fff;
+    height: 100vh;
+}
+.left-close-icon {
+    background: none;
+    border: none;
+    margin-left: 4.76em;
+}
+
+
+
+for iphone only
+
+@media only screen 
+and (min-device-width: 375px) 
+and (max-device-width: 812px) 
+and (-webkit-min-device-pixel-ratio: 3) {
+
+    /* Custom Styles */
+    .headliner{
+        margin-top: 3rem;
+    }
+
+    .eyebrow {
+        font-size: 1.75 rem;
+        color: white;
+        letter-spacing: 3px;
+    }
+
+    .headline1 {
+        font-family: 'mangoregular';
+        font-weight: 100;
+        letter-spacing: 0.2em;
+        color: #F6D432;
+        font-size: 3rem;
+    }
+
+    .countdown {
+        color: blue;
+        font-size: 6.25rem;
+    }
+    .main-container {
+        /* background: green; */
+        height: 30vh;
+        width: 100vw;
+    }
+
+
+    img.cloud{
+        height: 100px;
+    } 
+
+    .cloud1 img{
+        height: 161px;
+        width: auto;
+        margin-top: 6em;
+    }
+
+    .cloud2 img{
+        height: 161px;
+        width: auto;
+        margin-top: 8em;
+        margin-left: 3.5em;
+    }
+
+
+}
+
+@media only screen and (max-width: 480px) {
+    main {
+        /* background-color: black;
+        height: 30vh;
+        width: 100vw; */
+    }
+    aside {
+        background-color: black
+        height: 20vh
+    }
+
+    /* MOB Custom Styles */
+    .headliner{
+        margin-top: 3rem;
+    }
+
+    .eyebrow {
+        font-size: 1 rem;
+        color: white;
+        letter-spacing: 3px;
+    }
+    
+    .headline1 {
+        color: #F6D432;
+        font-size: 2.5rem;
+    }
+    
+    /* Countdown Styles */
+    .countdown {
+        color: blue;
+        font-size: 3.25rem;
+    }
+
+    /* MOB Clouds Styling */
+    .cloud1 img{
+        height: 80px;
+    }
+    
+    .cloud2 img{
+        height: 90px;
+        position: absolute;
+        left: 16rem;
+    }
+
+    /* Modal Styling */
+    #exampleModal .modal{
+        background-color: red;
+        overflow-y: hidden;
+        height: 100vh;
+    }
+    .modal-columns {
+        height: 2em;
+    }
+    .modal-header {
+        /* background-color: #000; */
+        border: none;
+        height: 4em;
+        padding: 2em 0em;
+    }
+    .modal-body{
+        /* background-color: #333; */
+        height: 50vh;
+    }
+
+    /* Modal Left Column */
+    .modal-left-col {
+        background-color: white;
+        color: #000;
+        height: 30vh;
+    }
+    .modal-left-col .container img {
+        height: 10em;
+    }
+    .modal-left-col .container .row {
+        margin-top: 1.3em;
+    }
+    .left-close-icon {
+        background: none;
+        /* visibility: hidden; */
+        /* border: none; */
+        margin-left: 4.76em;
+    }
+    .left-close-icon img {
+        height: 3em;
+        margin-left: -5em;
+        margin-top: 0em;
+    }
+
+    /* Modal Right Column */
+    .modal-right-col {
+        background-color: #0232F6;
+        height: 63vh;
+        padding-top: 1em;
+        border: none;
+    }
+    .modal-column-2 .modal-header, .modal-column-2 .modal-header button {
+        /* background-color: red; */
+        display: none;
+    }
+    .right-close-icon {
+        background: none;
+        border: none;
+        margin-right: 4em;
+    }
+    .right-close-icon img {
+        filter: invert(100%)        ;
+        -webkit-filter: invert(100%)        ;
+        margin-left: 14em;
+        margin-top: 1em;
+    }
+    .modal-right-col p {
+        padding-bottom: 1em;
+        padding-right: 3em;
+    }
+    /* Modal Right Column FORM */
+    .modal-right-col form input, 
+    .modal-right-col form button {
+        background-color: rgba(255,255, 255, 0.2);
+        padding: 1em 10em 1em 5em;
+        padding-left: 1.4em;
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+        margin-bottom: 1em;
+        border: none;
+        color: white;
+}
+.modal-right-col form button {
+    background-color: rgba(0,0, 0, 0.2);
+    padding: 1em 1.4em;
+}
+.modal-right-col form button i {
+    padding-left: 14.4em;
+    padding-right: 1em;
+    width: 30px;
+}
+.modal-right-col form input::placeholder {
+    color: white;
+}
+.modal-right-col form input[type=submit] {
+    background-color: rgba(0, 0, 0, 0.2);
+    color: white;
+}
+
+}
+
+/* Cloud Styling */
+
+.cloud {
+    display: flex;
+    justify-content: space-between;
+    
+}
+.cloud1 {
+    
+}
+.cloud2 {
+    
+}
+
+
+/* Mobile styles */
+
+/* .sideNav {
+    background-color: purple;
+    width: 100vw;
+    height: 10vh;
+    padding: 0 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+} */
+/* .logo {
+    background: red;
+    width: 30px;
+    height: 30px;
+} */
+
+/* .centertext {
+    background-color: black;
+    height: 50vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+.centertext h1, .centertext h3{
+    white-space: nowrap;
+}
+.centertext h3 {
+    flex-wrap: nowrap;
+}
+
+.count-down {
+
+} */
+
+
+
+
+/* 
+@media only screen and (max-width: 768px) {
+    .sideNav {
+
+    }
+
+    .centertext {
+
+    }
+
+    .count-down {
+
+    }
+} */
