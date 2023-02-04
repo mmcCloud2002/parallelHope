@@ -125,7 +125,80 @@ h1.headline1 {
 
 
 
-/* Modal Styling */
+/* Modal Styling - Left Column*/
+.modal-content {
+    margin-top: -1em;
+}
+.modal-header .btn-close {
+    color: white;
+}
+.modal .modal-body, .bs-modal-left {
+    height: 90vh;
+    /* overflow-y: hidden; */
+    margin-top: 0vh;
+}
+.modal .modal-body .bs-modal-picture img{
+    height: 40vh;
+}
+.modal .modal-body .bs-modal-left {
+    background: #white;
+}
+.modal .modal-body .bs-modal-left .modal-header h1 {
+    font-size: 3em;
+    color: #000;
+}
+.modal .modal-body .bs-modal-left .modal-picture-copy {
+    font-size: 1em;
+    color: #000;
+    
+}
+
+
+/* Modal Styling - Right Column*/
+.bs-modal-right {
+    background-color: blue; 
+    height: 100vh;
+    overflow-y: hidden;
+}
+.bs-column-form {
+    height: 100%;
+}
+.bs-column-form {
+    font-size: 1.2em;
+}
+.bs-modal-right .bs-right-copy {
+}
+.bs-modal-right .bs-column-form form input {
+    background-color: rgba(255, 255, 255, 0.3);
+    padding: 1em;
+    margin-bottom: 0.8em;
+    border: none;
+    outline: none;
+    color: white;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+}
+.bs-modal-right .bs-column-form form input:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+    transition: all 300ms;
+    -webkit-transition: all 300ms;
+    -moz-transition: all 300ms;
+    -ms-transition: all 300ms;
+    -o-transition: all 300ms;
+    transition-timing-function: ease-in-out;
+}
+.bs-modal-right .bs-column-form form input::placeholder {
+    color: #ddd;
+}
+
+
+
+
+
+
 .modal-columns {
     height: 4vh;
 }
@@ -144,7 +217,7 @@ h1.headline1 {
 /* Modal Right Column */
 .modal-right-col {
     background-color: #0232F6;
-    height: 70vh;
+    height: 90vh;
 }
 .right-close-icon {
     background: none;
@@ -152,11 +225,15 @@ h1.headline1 {
     margin-right: 5.5em;
     margin-top: 1em;
 }
+.modal-right-col form input {
+    background: rgba(255, 255, 255, 0.5);
+}
+
 
 /* Modal Left Column */
 .modal-left-col {
     background-color: #fff;
-    height: 100vh;
+    height: 90vh;
 }
 .left-close-icon {
     background: none;
@@ -310,6 +387,9 @@ span {
     /* padding-left: 14.4em;
     padding-right: 1em; */
     /* width: 30px; */
+}
+.modal-form {
+    margin-top: -30vh;
 }
 .modal-right-col form input::placeholder {
     color: white;
@@ -554,7 +634,7 @@ span {
         }
         /* Modal Right Column FORM */
         .modal-right-col form input, 
-        .modal-right-col form button {
+        .modal-right-col form button:not(.yt__button) {
             background-color: rgba(255,255, 255, 0.2);
             padding: 1em 10em 1em 5em;
             /* padding-left: 1.4em; */
