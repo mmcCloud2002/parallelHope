@@ -365,7 +365,10 @@ span {
 }
 }
 .modal-left-col .modal-picture img {
-    height: 30vh;
+    height: 10vh;
+}
+.bs-modal-picture {
+    height: 100px;
 }
 
 /* Modal: Left column */
