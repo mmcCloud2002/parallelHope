@@ -1,44 +1,3 @@
-/*
-COLORS USED:
-
-#FFFFFF
-#B7E0ED
-#E4F0F4
-#F2F7F9
-#F6D432
-#FFFFFF 0.09
-#0B2F53
-#0232F6
-#D9D9D9
-#0228C3 - 0.68
-#EDC400
-
-• Header
-• Main
-• Footer
------
-• Modal:
-    • 2 columns
-
-
-
-.sideNav .centertext .count-down
-*/
-
-
-
-/* Setup Styles  */
-/* @font-face { 
-    font-family: 'mangoregular';
-    src: url('https://jordanr.co/fonts/__MACOSX/Mango_WebFontKit/mango-webfont.eot');
-    src: url('https://jordanr.co/fonts/__MACOSX/Mango_WebFontKit/mango-webfont.eot?#iefix') format('embedded-opentype'),
-         url('https://jordanr.co/fonts/__MACOSX/Mango_WebFontKit/mango-webfont.woff2') format('woff2'),
-         url('https://jordanr.co/fonts/__MACOSX/Mango_WebFontKit/mango-webfont.woff') format('woff'),
-         url('https://jordanr.co/fonts/__MACOSX/Mango_WebFontKit/mango-webfont.svg#mangoregular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-} */
-
 
 /* General Styles */
 html {
@@ -50,7 +9,7 @@ html {
     padding: 0;
 }
 body{
-    background: #0042EE;
+    /* background: #0042EE; */
     color: white;
     font: 16px lato, sans-serif;
     overflow-x: hidden;
@@ -67,29 +26,8 @@ li {
     list-style-type: none;
 }
 
-/* Section Sizes */
 
-/* section {
-    background-color: #0232F6;
-} */
-/* main {
-    /* background: #0232F6; */
-    /* height: 80vh; */
-
-/* .main-container {
-    /* height: 100vh; */
- */ */
-/* span.dot{
-    color: #0232F6 !important;
-    color: red;
-} */
-
-/* Custom Styles */
-/* .headliner{
-    /* position: absolute; */
-    /* justify-content: center; */
-    /* height: 50vh; 
-} */
+/* main content */
 
 .eyebrow {
     font-size: 1rem;
@@ -109,22 +47,6 @@ h1.headline1 {
 }
 
 
-/* Clouds Styling */
-
-.cloud1 img {
-    height: 250px; 
-    margin-top: 3em;
-}
-
-.cloud2 img{
-    height: 257px;
-    width: auto;
-    /* margin-top: 8em; */
-    /* margin-right: 3.5em; */
-}
-
-
-
 /* Modal Styling - Left Column*/
 .modal-content {
     margin-top: -1em;
@@ -137,19 +59,19 @@ h1.headline1 {
     overflow-y: hidden;
     margin-top: 0vh;
 }
-.bs-modal-picture {
-    min-height: 30vh;
+.bs-modal-picture img{
+    height: 30vh;
 }
-.modal .modal-body .bs-modal-picture img {
-    height: 100%;
+.modal-picture-copy {
+    color: #000;
 }
+
+
 .modal .modal-body .bs-modal-left {
     background: #white;
 }
 .modal .modal-body .bs-modal-left .modal-header h1 {
     font-size: 3em;
-    text-align: center;
-    padding: 0;
     color: #000;
 }
 .modal .modal-body .bs-modal-left .modal-picture-copy {
@@ -197,18 +119,13 @@ h1.headline1 {
 .bs-modal-right .bs-column-form form input::placeholder {
     color: #ddd;
 }
-.modal-header {
-    background-color: none;
-    border: none;
-    /* height: 1em; */
-    /* padding: 3em 0em; */
-}
 
 
 
-/* -------- */
 
-/* .modal-columns {
+
+
+.modal-columns {
     height: 4vh;
 }
 .modal-header {
@@ -216,14 +133,14 @@ h1.headline1 {
     border: none;
     /* height: 1em; */
     /* padding: 3em 0em; */
-/* }
+}
 .modal-body{
     background-color: none;
     height: 40vh;
 }
 
 
-Modal Right Column
+/* Modal Right Column */
 .modal-right-col {
     background-color: #0232F6;
     height: 90vh;
@@ -239,7 +156,7 @@ Modal Right Column
 }
 
 
-Modal Left Column
+/* Modal Left Column */
 .modal-left-col {
     background-color: #fff;
     height: 90vh;
@@ -252,14 +169,13 @@ Modal Left Column
 }
 .left-close-icon img {
     height: 30px;
-} */
+}
 
 
 /* Countdown Styling */
 
 .countdown div {
-    display: inline-flex;
-    flex-direction: row;
+    display: inline-block;
     line-height: 1;
     padding: 20px;
     font-size: 40px;
@@ -293,8 +209,8 @@ footer {
 footer .rocket-clouds {
     position: relative;
     top: 80vh;
-    display: flex;
-    justify-content: center;
+    /* display: flex;
+    justify-content: center; */
     z-index: 100;
 
 }
@@ -302,10 +218,6 @@ footer video {
     margin-top: 10vh;
     height: 80vh;
 }
-
-
-
-
 
 .modal-left-col .modal-picture img {
     height: 20vh;
@@ -676,7 +588,7 @@ span {
                 display: inline-block;
                 line-height: 1;
                 /* padding: 20px; */
-                font-size: 3em;
+                font-size: 0.9em;
                 margin-top: 3em;
             }
             

@@ -40,44 +40,52 @@
   </button> -->
   
   <!-- Modal -->
-  <div class="modal fade  align-top" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal fade modal-fullscreen align-top" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
     <div class="modal-dialog modal-fullscreen">
       <div class="modal-content gx-0">
         <div class="modal-body modal-fullscreen container-fluid">
             <div class="row justify-content-center align-items-center">
-                <div class="container col-6 col-md-6 col-sm-12 bs-modal-left">             
-                    <div class="row flex-column modal-body-copy justify-content-center">
-                        <div class="col modal-header text-center align-self-start justify-content-center ml-5">
-                            <h1>Lorem</h1>
+                <div class="container-fluid bs-modal-left col-6">             
+                    <div class="d-flex flex-column modal-body-copy justify-content-center">
+                        <div class="container modal-header">
+                            <div class="col">
+                                <h1 class="text-center">Lorem</h1>
+                            </div>
                         </div>
-                        <div class="col bs-modal-picture align-self-center text-center justify-content-center ml-3 pl-5">
-                            <img src="/img/picture-1.png" alt=""> 
+                        <div class="d-flex justify-content-center">
+                            <div class="col">
+                                <div class="bs-modal-picture img-fluid mx-auto d-block justify-content-center">
+                                    <img src="./img/picture-1.png" alt="" class="img-fluid d-block mx-auto">
+                                </div> 
+                            </div>
                         </div>
-                        <div class="col-8 modal-picture-copy align-self-center justify-content-center text-center py-5">
-                         <p>In vitae tellus eget at. Eget amet egestas amet nunc tempus molestie elit etiam placerat. Sagittis quam nec scelerisque lacus.</p>
+                        <div class="d-flex modal-picture-copy justify-content-center align-content-center text-center py-5">
+                            <div class="col-6 justify-content-center">
+                                <p>In vitae tellus eget at. Eget amet egestas amet nunc tempus molestie elit etiam placerat. Sagittis quam nec scelerisque lacus.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="container col-md-6 col-sm-12 justify-content-center align-items-center bs-modal-right">
+                <div class="container col-md-6 col-sm-12 justify-content-center align-items-start bs-modal-right">
                     <div class="modal-header custom-header col-11 ">
                         <button type="button" class="btn-close btn-close-white align-items-end" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
-                    <div class="row flex-column text-center align-items-center justify-content-center bs-column-form">
-                        <div class="col-8 bs-right-copy">
-                            <div class="col-12 pb-5">
-                                <p>In vitae tellus eget at. Eget amet egestas amet nunc tempus molestie elit etiam placerat.</p>
+                    <div class="d-flex flex-column text-center align-items-center justify-content-start bs-column-form mt-5" >
+                        <div class="d-flex bs-right-copy justify-content-center">
+                            <div class="col-8 pb-5 text-center">
+                                <p class="col">In vitae tellus eget at. Eget amet egestas amet nunc tempus molestie elit etiam placerat.</p>
                             </div>
                         </div>
                         <div class="container modal-form">
                             <form class="row d-inline-flex justify-content-start flex-column col-sm-12 col-xs-12">
-                                <div class="d-inline-flex col-8 flex-column align-self-center justify-content-start">
+                                <div class="d-inline-flex col-lg-8 col-sm-12 flex-column align-self-center justify-content-start">
                                     
                                     <input type="text" placeholder="Name" class="col">
-                                    <input type="email" placeholder="Email">
+                                    <input type="email" placeholder="Email" required>
                                     <input type="tel" placeholder="Phone">
                                     <!-- <input type="submit" value="Submit"> -->
                                     
-                                    <button type="button" class="yt__button justify-content-center">
+                                    <button type="button" class="yt__button justify-content-between py-4">
                                         <span class="button__text">Submit</span>
                                         <span class="button__icon">
                                             <i class="fa-solid fa-arrow-right"></i>
@@ -90,15 +98,10 @@
                     </div>
                 </div>
             </div>
-          ...
         </div>
-        <!-- <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Understood</button>
-        </div> -->
-      </div>
     </div>
-  </div>
+    </div>
+</div>
 
 
 
@@ -110,31 +113,24 @@
         
     <!-- The Main page goes below-->
     <main class="container-fluid">
-        <div class="d-flex col-12">
-        <!-- <div class="col-12 gx-0 no-gutters main-container"> -->
+        <div class="d-flex gx-0 col-12 col-sm-12 main-container no-gutters">
 
                 <!-- Cloud 1 -->
-
                 <div class="col-2 cloud cloud1">
                     <img src="img/Cloud1.png" alt="">
                 </div>
 
-
                 <!-- Headlines -->
-                
-                    <div class="col-8 col-sm-8 text-center headliner">
+                    <div class="col-8 col-sm-8 text-center headliner justify-content-center">
                         <small class="eyebrow col-12">NEW WEBSITE</small>
                         <h1 class="headline1 col-12 ">LAUNCHING<br>SOON</h1>
                     </div>
-                
-        
 
                 <!-- Cloud 2 -->
                     <div class="col-2 d-none d-md-block cloud cloud2">
                         <img src="img/Cloud2.png" alt="">
                     </div>
         </div>   
-            <!-- </div>             -->
     </main>
 
 
@@ -142,9 +138,9 @@
 
             <!-- Countdown timer -->
             
-            <div class="container">
-                <div class="countdown d-flex justify-content-center">
-                    <div id="timer" class="col-lg-12 col-md-12 text-center">
+            <div class="container-fluid">
+                <div class="row countdown col-12">
+                    <div id="timer" class="col mx-auto text-center">
                         <div id="days"></div>
                         <div id="hours"></div>
                         <div id="minutes"></div>
@@ -188,11 +184,11 @@
     <!-- this is a tester to see if it pulls -->
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
-    <script>
+    <!-- <script>
         $(window).on('load', function() {
             $('#exampleModal').modal('show');
         });
-    </script>
+    </script> -->
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
