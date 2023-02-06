@@ -43,11 +43,11 @@
 
                 <div class="row justify-content-center align-items-center">
                     <div class="container-fluid bs-modal-left col-12 col-md-6 gx-0 border-0">  
-                        <div class="d-flex navbar navbar-expand-lg navbar-light col-11 modal-header gx-0 border-0 fixed-top">
+                        <div class="d-flex navbar navbar-expand-lg col-11 modal-header gx-0 border-0 fixed-top">
                             <a class="navbar-brand logo" href="#">
                                 <img src="img/logo-spot.png" alt="">
                             </a>
-                            <button type="button" class="btn-close btn-close-black align-items-end d-none d-md-block" data-bs-dismiss="modal" aria-label="Close"></button>
+                            <button type="button" class="btn-close btn-close-black align-items-end" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>           
                         <div class="d-flex flex-column modal-body-copy justify-content-center gx-0 border-0">
                             <div class="container modal-header gx-0 border-0">
@@ -56,14 +56,14 @@
                                 </div>
                             </div>
                             <div class="d-flex justify-content-center">
-                                <div class="col-10 col-lg-8 modal-picture">
+                                <div class="col-10 col-lg-6 modal-picture">
                                     <div class="bs-modal-picture img-fluid mx-auto d-block justify-content-center">
                                         <img src="./img/picture-1.png" alt="" class="img-fluid d-block mx-auto">
                                     </div> 
                                 </div>
                             </div>
-                            <div class="d-flex modal-picture-copy justify-content-center align-content-center text-center py-5">
-                                <div class="col-6 justify-content-center">
+                            <div class="d-flex modal-picture-copy justify-content-center align-content-center text-center ">
+                                <div class="col-6 justify-content-center my-4">
                                     <p>In vitae tellus eget at. Eget amet egestas amet nunc tempus molestie elit etiam placerat. Sagittis quam nec scelerisque lacus.</p>
                                 </div>
                             </div>
@@ -71,34 +71,36 @@
                     </div>
 
                     <div class="container col-12 col-md-6 justify-content-center align-items-start bs-modal-right">
-                        <div class="d-flex navbar navbar-expand-lg navbar-light col-11 	d-none d-sm-block modal-header gx-0 border-0">
-                            <button type="button" class="btn-close btn-close-white align-items-end" data-bs-dismiss="modal" aria-label="Close"></button>
+                        <div class="d-flex navbar navbar-expand-lg navbar-light col-11 d-sm-none d-sm-block modal-header gx-0 border-0">
+                            <!-- <button type="button" class="btn-close btn-close-white d-sm-none d-sm-block align-items-end" data-bs-dismiss="modal" aria-label="Close"></button> -->
                         </div>
                         <div class="d-flex flex-column text-center align-items-center justify-content-start bs-column-form mt-5" >
                             <div class="d-flex bs-right-copy justify-content-center">
-                                <div class="col-8 pb-5 text-center">
+                                <div class="col-8 pb-3 text-center">
                                     <p class="col">In vitae tellus eget at. Eget amet egestas amet nunc tempus molestie elit etiam placerat.</p>
                                 </div>
                             </div>
                             <div class="container modal-form modal-right-col gx-0 border-0">
                                 <form class="row d-inline-flex justify-content-start flex-column col-sm-12 col-xs-12">
-                                    <div class="d-inline-flex col-lg-8 col-sm-12 flex-column align-self-center justify-content-start">
-                                        <div class="input-container" data-error="We only use letters for names here. Try again without the numbers.">
-                                            <input type="text" placeholder="Name" class="col" minlength="4"  size="10" required>
-                                        </div>
-                                        <div class="input-container" data-error="This is only for emails. Please enter your email address.">
-                                            <input type="email" placeholder="Email" minlength="4" size="10" pattern="^[a-zA-Z0-9+_.-]+@[a-zA-Z0-9.-]+\.[a-zA-z]{2,3}$" required>
-                                        </div>                                        
-                                        <div class="input-container" data-error="Only numbers go here. Try again with your 10-digit phone number.">
-                                            <input type="tel" minlength="7" size="10" maxlength="10" placeholder="Phone" pattern="^1?[\(\- ]*\d{3}[\)-\. ]*\d{3}[-\. ]*\d{4}$">                                        
-                                        </div>
-                                        <div class="input-container" data-error="Whoops! Looks like either your internet is down, or we messed something up. Try again in a bit.">
-                                            <button type="submit" class="yt__button justify-content-between py-4">
-                                                <span class="button__text">Submit</span>
-                                                <span class="button__icon">
-                                                <i class="fa-solid fa-arrow-right"></i>
-                                                </span>
-                                            </button>
+                                    <div class="d-inline-flex col-lg-8 col-sm-12 flex-column align-self-center justify-content-center">
+                                        <div class="col-10 d-column">
+                                            <div class="input-container" data-error="We only use letters for names here. Try again without the numbers.">
+                                                <input type="text" placeholder="Name" class="col" minlength="4"  size="10" required>
+                                            </div>
+                                            <div class="input-container" data-error="This is only for emails. Please enter your email address.">
+                                                <input type="email" placeholder="Email" minlength="4" size="10" pattern="^[a-zA-Z0-9+_.-]+@[a-zA-Z0-9.-]+\.[a-zA-z]{2,3}$" required>
+                                            </div>                                        
+                                            <div class="input-container" data-error="Only numbers go here. Try again with your 10-digit phone number.">
+                                                <input type="tel" minlength="7" size="10" maxlength="10" placeholder="Phone" pattern="^1?[\(\- ]*\d{3}[\)-\. ]*\d{3}[-\. ]*\d{4}$">                                        
+                                            </div>
+                                            <div class="input-container" data-error="Whoops! Looks like either your internet is down, or we messed something up. Try again in a bit.">
+                                                <button type="submit" class="yt__button justify-content-between py-4">
+                                                    <span class="button__text">Submit</span>
+                                                    <span class="button__icon">
+                                                    <i class="fa-solid fa-arrow-right"></i>
+                                                    </span>
+                                                </button>
+                                            </div>
                                         </div>
                                     </div>
                                 </form>
@@ -124,15 +126,15 @@
 </div>
 
     <!-- The Main page goes below-->
-    <div class="container-fluid" style="display: none;">
-        <div class="d-flex gx-0 col-12">
+    <div class="container-fluid">
+        <div class="d-flex gx-0 col-12 align-content-start justify-content-between">
             <!-- Cloud 1 -->
-            <div class="col-6 cloud cloud1">
+            <div class="col-9 cloud cloud1">
                 <img src="img/Cloud1.png" alt="">
             </div>
 
                                 <!-- Cloud 2 -->
-            <div class="col-6 d-none d-md-block cloud cloud2">
+            <div class="col-3 d-none d-sm-block cloud cloud2">
                 <img src="img/Cloud2.png" alt="">
             </div>
         </div>
@@ -160,7 +162,7 @@
         <footer class="container-fluid">
             <div class="d-flex justify-content-center">
                 <div class="col-12 rocketGif">
-                    <div class="d-flex justify-content-center  rocket-clouds">
+                    <div class="d-flex justify-content-center rocket-clouds">
                         <img src="img/rocket_gif/rocket_clouds.png" alt="">
                     </div>
                     <div class="d-flex justify-content-center rocketShip">
