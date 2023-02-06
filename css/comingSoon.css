@@ -566,7 +566,7 @@ span {
         margin-top: -1.1%;
         margin-right: -50%;
         margin-bottom: -30%;
-        overflow-y: hidden !important;
+        /* overflow: hidden; */
     }    
     .bs-modal-right, .bs-column-form {
         height: 100%;
@@ -574,6 +574,7 @@ span {
     .bs-modal-right{
         height: 100vh;
         margin-top: -1%;
+        overflow-y: hidden;
     }
     .bs-modal-left {
         height: 90vh;
@@ -583,6 +584,7 @@ span {
         background-color: white;
         height: 70%;
     }
+
     
     /* Modal Left Column */
     
@@ -707,10 +709,10 @@ span {
         }
         .cloud2 img {
             position:absolute;
-            height: 30%;
+            height: 37%;
             width: auto;
-            margin-top: 6%;
-            margin-right: 10%;
+            margin-top: 9%;
+            margin-right: 5%;
             opacity: 1;
             z-index: 10;
         }
@@ -732,4 +734,60 @@ span {
             margin-top: -10em;
             z-index: -20;
         }
+
+         /* Modal */
+        .bs-modal-left, .bs-column-form{
+            height: 300%;
+        }
+        .modal-form input {
+            width: 140%;
+            margin: 0 auto;
+        }
+        .modal-right-col form input {
+            background-color: rgba(255,255, 255, 0.2);
+            display: block;
+            padding: 1em 1em 1em 1em;
+            padding: 9% 0;
+            width: 90%;
+            height: 6%;
+            margin-left: 0%;
+            padding-left: 8%;
+            border-radius: 10px;
+            -webkit-border-radius: 10px;
+            -moz-border-radius: 10px;
+            -ms-border-radius: 10px;
+            -o-border-radius: 10px;
+            margin-bottom: 1em;
+            border: none;
+            color: white;
+            /* box-sizing: border-box; */
+            /* transition: background 0.2, border 0.2;
+            -webkit-transition: background 0.2, border 0.2;
+            -moz-transition: background 0.2, border 0.2;
+            -ms-transition: background 0.2, border 0.2;
+            -o-transition: background 0.2, border 0.2; */
+        }
+        .yt__button {
+            display: inline-flex;
+            height: 60px;
+            padding: 0;
+            width: 91%;
+            margin-left: -9%;
+            margin-bottom: 0%;
+            background: rgba(0, 0, 0, 0.3);
+            border: none;
+            outline: none;
+            border-radius: 10px;
+            -webkit-border-radius: 10px;
+            -moz-border-radius: 10px;
+            -ms-border-radius: 10px;
+            -o-border-radius: 10px;
+            overflow: hidden;
+            font-family: 'Lato', sans-serif;
+            font-size: 2.4em;
+            font-weight: 300;
+            cursor: pointer;
+        }
     }
+
+    
