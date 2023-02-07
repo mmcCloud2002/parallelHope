@@ -1,3 +1,735 @@
-body{
-background: (#0232F6);
+/*
+COLORS USED:
+
+#FFFFFF
+#B7E0ED
+#E4F0F4
+#F2F7F9
+#F6D432
+#FFFFFF 0.09
+#0B2F53
+#0232F6
+#D9D9D9
+#0228C3 - 0.68
+#EDC400
+
+• Header
+• Main
+• Footer
+-----
+• Modal:
+    • 2 columns
+
+
+.main .modal
+
+
+@media all (min-width: 29.75em) {}
+@media all (min-width: 39.8em) {}
+@media all (min-width: 46.8em) {}
+@media all (min-width: 48em) {}
+@media all (min-width: 50em) {}
+@media all (min-width: 54.5em) {}
+@media all (min-width: 60em) {}
+@media all (min-width: 67em) {}
+@media all (min-width: 73em) {}
+
+*/
+
+
+
+/* Setup Styles  */
+/* @font-face { 
+    font-family: 'mangoregular';
+    src: url('https://jordanr.co/fonts/__MACOSX/Mango_WebFontKit/mango-webfont.eot');
+    src: url('https://jordanr.co/fonts/__MACOSX/Mango_WebFontKit/mango-webfont.eot?#iefix') format('embedded-opentype'),
+         url('https://jordanr.co/fonts/__MACOSX/Mango_WebFontKit/mango-webfont.woff2') format('woff2'),
+         url('https://jordanr.co/fonts/__MACOSX/Mango_WebFontKit/mango-webfont.woff') format('woff'),
+         url('https://jordanr.co/fonts/__MACOSX/Mango_WebFontKit/mango-webfont.svg#mangoregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+} */
+
+
+/* General Styles */
+
+html {
+    box-sizing: border-box;
 }
+*, *:before, *:after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: #0042EE;
+    color: white;
+    font: 16px lato, sans-serif;
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    /* width: 100vw; */
+    /* height: 100vh; */
+}
+a {
+    color: white;
+}
+li {
+    list-style-type: none;
+}
+
+/* Nav Area Styles */ 
+
+header nav {
+    padding: 0 1em;
+}
+
+nav .logo img {
+    width: 70%;
+}
+button.navbar-brand .menu-icon {
+    padding: 0.5em;
+    cursor: pointer;
+}
+/* Hero Area Styles */
+
+.headliner {
+    /* position: absolute;
+    top: 8em;
+    left: 20vw; */
+    display: flex;
+    flex-direction: column;
+    margin-top: 10vh;
+}
+small.eyebrow {
+    font-size: 1rem;
+    color: white;
+    letter-spacing: 3px;
+    margin-top: 3vh;
+}
+
+h1.headline1 {
+    font-family: 'mangoregular';
+    font-size: 2.4rem;
+    font-weight: 100;
+    letter-spacing: 0.2em;
+    display: flex;
+    justify-content: center;
+    color: #F6D432; 
+}
+.cloud1 img {
+    height: 10%;
+    opacity: 0.5;
+    position: absolute;
+    top: 23%;
+}
+.cloud2 img {
+    height: 1em;
+    opacity: 0.5;
+}
+
+/* Countdown Styling */
+
+.countdown div {
+    display: inline-block;
+    line-height: 1;
+    padding: 1.125em;
+    /* margin-top: -10vh; */
+    font-size: 0.05em;
+    font-family: 'Lato', sans-serif;
+    width: 100%;
+    text-align: center;
+}
+
+#timer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    line-height: 1;
+    width: 100%;
+    height: 20%;        
+    /* padding: 20px; */
+    font-size: 1em;
+    margin-top: -1em;
+}
+
+span {
+    display: block;
+    color: white;
+    align-items: end;
+    font-size: 0.4em;
+    padding: 0 3px;
+    text-align: center;
+}
+
+#days, #hours, #minutes, #seconds {
+    font-size: 3em; 
+    color: white;
+    width: 50px;
+    height: 50px;
+    padding: 0;
+    margin: 0;
+    margin: 1.25em;
+}
+
+/* Rocket Animation */
+footer .rocketGif {
+    position: relative;
+    margin-top: -3em;
+    z-index: -10;
+    overflow: hidden;
+}
+.rocketShip {
+    position: relative;
+    margin-top: -10em;
+    z-index: -20;
+}
+
+
+/* Modal Styling */
+
+.bs-modal-left {
+height: 90vh;
+
+}
+.bs-modal-left {
+    background-color: white;
+    height: 80vh;
+}
+.bs-modal-right {
+    background-color: #0232F6;
+}
+
+
+/* Modal Left Column */
+
+.header-modal-left h1 {
+    color: #000;
+    font-size: 2.5rem;
+    font-weight: 300;
+}
+.bs-modal-picture {
+    height: 20%;
+    margin: 0;
+    padding: 0;
+}
+.modal-picture {
+    margin: 0;
+    padding: 0;
+    height: 30%;
+}
+.bs-modal-picture {
+    height: 20%;
+    margin: 0;
+    padding: 0;
+}
+.modal-picture {
+    margin: 0;
+    padding: 0;
+    height: 30%;
+}
+
+.modal-content {
+    border: none;
+}
+.modal-picture-copy {
+    color: #000;
+}
+/* Modal Right Column */
+.modal-right-col {
+    background-color: #0232F6;
+    /* height: 70vh; */
+    padding-top: 1em;
+    border: none;
+}
+/* .modal-column-2 .modal-header, .modal-column-2 .modal-header button {
+    /* background-color: red;
+    display: none;
+} */
+.modal-header {
+    border: 0 none;
+}
+.modal-footer {
+    border: 0 none;
+}
+.right-close-icon {
+    background: none;
+    border: none;
+    margin-right: 4em;
+}
+.right-close-icon img {
+    filter: invert(100%)        ;
+    -webkit-filter: invert(100%)        ;
+    margin-left: 14em;
+    margin-top: 1em;
+}
+
+
+.modal .modal-body, .bs-modal-left{
+    overflow-y: visible;
+    overflow-x: hidden;
+    /* height: 50vh; */
+}
+.modal-right-col .modal-body {
+    /* background-color: red; */
+    display: flex;
+    justify-content: start;
+    /* padding-top: 6rem; */
+    align-content: center;
+    font-size: 1.3em;
+}
+.modal-right-col form input {
+    display: flex;
+    flex-direction: column;
+}
+
+.modal-right-col form input::placeholder {
+    color: white;
+}
+.modal-right-col form input[type=submit] {
+    background-color: rgba(0, 0, 0, 0.2);
+    color: white;
+}
+.modal-right-col form button {
+    background-color: rgba(0,0, 0, 0.2);
+    /* padding: 0.5em 1.4em; */
+    color: white;
+    /* margin-bottom: 20rem; */
+}
+.mrc-copy {
+    padding-bottom: 4rem;
+    padding-left: 6rem;
+    text-align: left;
+}
+/* Modal Right Column FORM */
+.input-container {
+    margin-bottom: 2%;
+    max-width: 300px;
+}
+.input-container[data-error].input {
+    border: red;
+    color: red;
+    border: solid 3px lime;
+    background: white;
+}
+.input-container[data-error]::after {
+    content:attr(data-error);
+    font-size: 1.1em;
+    color: white;
+    margin: 10px;
+    padding: 0.7em;
+    letter-spacing: 0.03em;
+    display:block;
+    background: darkslategray;
+    border-radius: 0.8em;
+    width: 100%;
+    -webkit-border-radius: 0.8em;
+    -moz-border-radius: 0.8em;
+    -ms-border-radius: 0.8em;
+    -o-border-radius: 0.8em;
+    display: none;
+}
+.modal-right-col form input {
+    background-color: rgba(255,255, 255, 0.2);
+    display: block;
+    padding: 1em 1em 1em 1em;
+    padding: 12% 0;
+    width: 150%;
+    height: 10%;
+    padding-left: 18%;
+    margin-left: -30%;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    margin-bottom: 1em;
+    border: none;
+    color: white;
+    /* box-sizing: border-box; */
+    /* transition: background 0.2, border 0.2;
+    -webkit-transition: background 0.2, border 0.2;
+    -moz-transition: background 0.2, border 0.2;
+    -ms-transition: background 0.2, border 0.2;
+    -o-transition: background 0.2, border 0.2; */
+}
+.modal-right-col form input:hover {
+    background-color: rgba(255,255, 255, 0.4);
+    transition: all 200ms;
+    -webkit-transition: all 200ms;
+    -moz-transition: all 200ms;
+    -ms-transition: all 200ms;
+    -o-transition: all 200ms;
+    transition-timing-function: linear;
+}
+
+.modal-right-col form button:hover {
+    background-color: rgba(0,0, 0, 0.4);
+    color: white;
+    transition: all 300ms;
+    -webkit-transition: all 300ms;
+    -moz-transition: all 300ms;
+    -ms-transition: all 300ms;
+    -o-transition: all 300ms;
+    transition-timing-function: linear;
+}
+/* Modal Right Column FORM */
+.modal-form input {
+    width: 100%;
+    margin: 0 auto;
+}
+.modal-right-col form input, 
+.modal-right-col form button:not(.yt__button) {
+    background-color: rgba(255,255, 255, 0.2);
+    /* padding: 1em 10em 1em 5em; */
+    /* padding-left: 1.4em; */
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    margin-bottom: 1em;
+    border: none;
+    color: white;
+}
+.yt__button {
+    display: inline-flex;
+    /* padding: -3%; */
+    width: 150%;
+    margin-left: -30%;
+    background: rgba(0, 0, 0, 0.3);
+    font-weight:bolder;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    overflow: hidden;
+    font-family: 'Lato', sans-serif;
+    font-size: 2.4em;
+    font-weight: 300;
+    cursor: pointer;
+}
+.yt__button:hover {
+    background: rgba(0, 0, 0, 0.5);
+}
+.yt__button:active {
+    background: rgba(0, 0, 0, 0.7);
+}
+.button__text, 
+.button__icon {
+    display: inline-flex;
+    align-items: center;
+    padding: 0 24px;
+    color: white;
+    height: 100%;
+}
+.button__icon {
+    font-size: 0.6em;
+}
+footer ul.social-icons {
+    width: 99%;
+    height: fit-content;
+    margin: 3%;
+    margin-bottom: 10%;
+    padding: 0 3%;
+}
+footer ul.social-icons li img {
+    width: 50%;
+    height: auto;
+    margin: 0 3px;
+    opacity: 0.8;
+}
+footer ul.social-icons li img:hover {
+    width: 50%;
+    height: auto;
+    margin: 0 3px;
+    opacity: 1;
+    transition: 300ms;
+    -webkit-transition: 300ms;
+    -moz-transition: 300ms;
+    -ms-transition: 300ms;
+    -o-transition: 300ms;
+    transition-timing-function: ease-in-out;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* !!!!!!!!!!!!!!!!! MEDIA QUERIES !!!!!!!!!!!!!!!!! */
+
+@media (min-width: 67em) {
+
+    /* Hero Area Styles */
+
+.headliner {
+    /* position: absolute;
+    top: 8em;
+    left: 20vw; */
+    display: flex;
+    flex-direction: column;
+    margin-top: 10vh;
+}
+small.eyebrow {
+    font-size: 1.7rem;
+    color: white;
+    letter-spacing: 3px;
+    margin-top: 3vh;
+}
+
+h1.headline1 {
+    font-family: 'mangoregular';
+    font-size: 5rem;
+    font-weight: 100;
+    letter-spacing: 0.2em;
+    display: flex;
+    justify-content: center;
+    color: #F6D432; 
+}
+.cloud1 img {
+    position:absolute;
+    height: 30%;
+    width: auto;
+    opacity: 1;
+    /* position: relative; */
+    z-index: -10;
+}
+.cloud2 img {
+    position:absolute;
+    height: 50%;
+    width: auto;
+    margin-top: 6%;
+    opacity: 1;
+    z-index: -10;
+}
+
+/* Countdown Styling */
+
+.countdown div {
+    display: inline-block;
+    line-height: 1;
+    padding: 1.125em;
+    /* margin-top: -10vh; */
+    font-size: 0.05em;
+    font-family: 'Lato', sans-serif;
+    width: 100%;
+    text-align: center;
+}
+
+#timer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    line-height: 1;
+    width: 100%;
+    height: 30%;        
+    /* padding: 20px; */
+    font-size: 1em;
+    margin-top: -1em;
+}
+
+span {
+    display: block;
+    color: white;
+    align-items: end;
+    font-size: 0.4em;
+    padding: 0 3px;
+    text-align: center;
+}
+
+#days, #hours, #minutes, #seconds {
+    font-size: 3em; 
+    color: white;
+    width: 50px;
+    height: 50px;
+    padding: 0;
+    margin: 0;
+    margin: 1.25em;
+}
+
+/* Modal styles */
+
+    .modal {
+        background: black;
+        height: 100%;
+        margin-top: -1.1%;
+        margin-right: -50%;
+        margin-bottom: -30%;
+        overflow-y: hidden !important;
+    }    
+    .bs-modal-right, .bs-column-form {
+        height: 100%;
+    }
+    .bs-modal-right{
+        height: 100vh;
+        margin-top: -1%;
+    }
+    .bs-modal-left {
+        height: 90vh;
+        
+    }
+    .bs-modal-left {
+        background-color: white;
+        height: 70%;
+    }
+    
+    /* Modal Left Column */
+    
+    .header-modal-left h1 {
+        color: #000;
+        font-size: 2.5rem;
+        font-weight: 300;
+    }
+    .modal-header .btn-close {
+        margin-top: 1%;
+        margin-right: -8%;
+    }
+    .modal-form input {
+        width: 10%;
+    }
+    .modal-right-col form input {
+        background-color: rgba(255,255, 255, 0.2);
+        display: block;
+        padding: 1em 1em 1em 1em;
+        padding: 9% 0;
+        width: 150%;
+        height: 6%;
+        margin-left: 0%;
+        padding-left: 8%;
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+        margin-bottom: 1em;
+        border: none;
+        color: white;
+        /* box-sizing: border-box; */
+        /* transition: background 0.2, border 0.2;
+        -webkit-transition: background 0.2, border 0.2;
+        -moz-transition: background 0.2, border 0.2;
+        -ms-transition: background 0.2, border 0.2;
+        -o-transition: background 0.2, border 0.2; */
+    }
+    .yt__button {
+        display: inline-flex;
+        height: 60px;
+        padding: 0;
+        width: 150%;
+        margin-left: 0%;
+        margin-bottom: 0%;
+        background: rgba(0, 0, 0, 0.3);
+        border: none;
+        outline: none;
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+        overflow: hidden;
+        font-family: 'Lato', sans-serif;
+        font-size: 2.4em;
+        font-weight: 300;
+        cursor: pointer;
+    }
+    footer ul.social-icons {
+        width: 70%;
+        height: fit-content;
+        margin: 3%;
+        margin-bottom: 10%;
+        padding: 0 3%;
+    }
+    footer ul.social-icons li img {
+        width: 50%;
+        height: auto;
+        margin: 0 3px;
+        opacity: 0.8;
+    }
+    footer ul.social-icons li img:hover {
+        width: 50%;
+        height: auto;
+        margin: 0 3px;
+        opacity: 1;
+        transition: 300ms;
+        -webkit-transition: 300ms;
+        -moz-transition: 300ms;
+        -ms-transition: 300ms;
+        -o-transition: 300ms;
+        transition-timing-function: ease-in-out;
+    }
+}
+
+    @media only screen and (max-width: 65em) and (min-width: 36em){
+
+        .headliner {
+            /* position: absolute;
+            top: 8em;
+            left: 20vw; */
+            display: flex;
+            flex-direction: column;
+            margin-top: 10vh;
+        }
+        small.eyebrow {
+            font-size: 1rem;
+            color: white;
+            letter-spacing: 3px;
+            margin-top: 3vh;
+        }
+        
+        h1.headline1 {
+            font-family: 'mangoregular';
+            font-size: 3rem;
+            font-weight: 100;
+            letter-spacing: 0.2em;
+            display: flex;
+            justify-content: center;
+            color: #F6D432; 
+        }
+        .cloud1 img {
+            position:absolute;
+            height: 20%;
+            width: auto;
+            margin-left: -6%;
+            opacity: 1;
+            /* position: relative; */
+            z-index: 10;
+        }
+        .cloud2 img {
+            position:absolute;
+            height: 30%;
+            width: auto;
+            margin-top: 6%;
+            margin-right: 10%;
+            opacity: 1;
+            z-index: 10;
+        }
+        .rocketGif .rocket-clouds img {
+            height: 10%;
+            width: auto;
+
+        }
+
+        /* Rocket Animation */
+        footer .rocketGif {
+            position: relative;
+            margin-top: 0em;
+            z-index: -10;
+            overflow: hidden;
+        }
+        .rocketShip {
+            position: relative;
+            margin-top: -10em;
+            z-index: -20;
+        }
+    }
