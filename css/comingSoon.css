@@ -47,7 +47,8 @@ COLORS USED:
 
 */
 
-
+/* Mail Chimp Form ID
+#mc_embed_signup */
 
 /* Setup Styles  */
 /* @font-face { 
@@ -60,6 +61,26 @@ COLORS USED:
     font-weight: normal;
     font-style: normal;
 } */
+
+
+/* MailChimp Classes and ID's */
+
+/* 
+
+#mc_embed_signup
+#mce-NAME-HELPERTEXT
+#mce-responses
+#mc-embedded-subscribe
+.mc-field-group
+.helper_text
+.optionalParent
+.clear
+.foot
+.button 
+
+*/
+
+
 
 
 /* General Styles */
@@ -252,6 +273,7 @@ height: 90vh;
 .modal-right-col {
     background-color: #0232F6;
     height: 20vh;
+    width: 80vw;
     /* padding-top: 1em; */
     border: none;
 }
@@ -296,8 +318,8 @@ height: 90vh;
     flex-direction: column;
     /* padding: 1em 12em 1em 1em;
     padding-left: 12%; */
-    margin-bottom: 3%;
-    width: 100%;
+    margin-bottom: 1%;
+    width: 60vw;
 }
 
 .modal-right-col form input::placeholder {
@@ -318,7 +340,44 @@ height: 90vh;
     padding-left: 6rem;
     text-align: left;
 }
+
+
 /* Modal Right Column FORM */
+
+
+/* 
+
+#mc_embed_signup
+#mce-NAME-HELPERTEXT
+#mce-responses
+#mc-embedded-subscribe
+.mc-field-group
+.helper_text
+.optionalParent
+.clear
+.foot
+.button 
+.asterisk
+*/
+
+#mc_embed_signup {
+    background-color: #0232F6 !important;
+}
+
+.form-group label {
+    background-color: rgba(255,255, 255, 0.2);
+    
+    /*margin-bottom: 1em;
+    */border: none;
+    color: white;
+    transition: all 200ms;
+    -webkit-transition: all 200ms;
+    -moz-transition: all 200ms;
+    -ms-transition: all 200ms;
+    -o-transition: all 200ms;
+    transition-timing-function: linear;
+}
+
 .input-container {
     margin-bottom: 2%;
     /* max-width: 300px; */
@@ -355,7 +414,11 @@ height: 90vh;
     -o-transition: all 200ms;
     transition-timing-function: linear;
 }
-
+.modal-right-col form input:focus {
+    background-color: rgba(246, 212, 50, 1);
+    background: white;
+    color: #000;
+}
 .modal-right-col form button:hover {
     background-color: rgba(0,0, 0, 0.4);
     color: white;
@@ -369,7 +432,7 @@ height: 90vh;
 /* Modal Right Column FORM */
 .modal-form input {
     width: 100%;
-    margin: 0 auto;
+    /* margin: 0 auto; */
 }
 .yt__button {
     display: inline-flex;
@@ -415,18 +478,18 @@ height: 90vh;
 .modal-right-col form input {
     background-color: rgba(255,255, 255, 0.2);
     padding: 1em 1em 1em 1em;
-    padding: 4%;
-    border-radius: 10px;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -ms-border-radius: 10px;
-    -o-border-radius: 10px;
-    /* margin-bottom: 1em; */
-    border: none;
+    /* padding: 4%; */
+    width: 60vw;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    /*margin-bottom: 1em;
+    */border: none;
     color: white;
 }
 .modal-right-col form button {
-    
     padding: 1em 1em 1em 1em;
     padding: 4%;
     border-radius: 10px;
@@ -465,11 +528,14 @@ footer ul.social-icons li img:hover {
 }
 .modal-right-col {
     margin-bottom: 1vh;
-    height: 30vh;
+    height: 30%;
+}
+#mc_embed_signup {
+    width: auto;
 }
 
 
-/* !!!!!!!!!!!!!!!!! MEDIA QUERIES !!!!!!!!!!!!!!!!! */
+/* **** MEDIA QUERIES **** */
 
 @media (min-width: 36em) {
     
@@ -538,7 +604,7 @@ footer ul.social-icons li img:hover {
         /* padding: 1em 12em 1em 1em;
         padding-left: 12%; */
         margin-bottom: 3%;
-        width: 100%;
+        width: 60vw;
     }
     
     .modal-right-col form input::placeholder {
@@ -596,9 +662,10 @@ footer ul.social-icons li img:hover {
     color: #000;
 }
 /* Modal Right Column */
-.modal-right-col {
+.modal-right-col:not(input) {
     background-color: #0232F6;
-    height: 10vh;
+    /* height: 8vh; */
+    padding: 0 4%;
     /* padding-top: 1em; */
     border: none;
 }
@@ -643,8 +710,8 @@ footer ul.social-icons li img:hover {
     flex-direction: column;
     /* padding: 1em 12em 1em 1em;
     padding-left: 12%; */
-    margin-bottom: 3%;
-    width: 100%;
+    margin-bottom: 5%;
+    /* width: 100%; */
 }
 
 .modal-right-col form input::placeholder {
@@ -693,10 +760,10 @@ footer ul.social-icons li img:hover {
     -o-border-radius: 0.8em;
     display: none;
 }
-.modal-right-col  {
+/* .modal-right-col  {
     margin-bottom: 19vh;
     height: 30vh;
-}
+} */
 
 
 
@@ -847,6 +914,7 @@ span {
         padding: 3% 0;
         padding-left: 4;
         width: 100%;
+        width: 60vw;
         /* height: 2%; */
         margin-left: 0%;
         padding-left: 8%;
@@ -978,24 +1046,24 @@ span {
 
          /* Modal */
         .bs-modal-left, .bs-column-form{
-            height: 300%;
+            height: 30%;
         }
         .modal-form input {
             width: 140%;
             margin: 0 auto;
         }
         .modal-right-col {
-            height: 50vh           
+            height: 60vh           
         }
         .modal-right-col form input {
             background-color: rgba(255,255, 255, 0.2);
             display: block;
             padding: 1em 1em 1em 1em;
-            padding: 5% 0;
-            width: 100%;
+            /* padding: 5% 0; */
+            width: 40vw;
             height: 6%;
             margin-left: 0%;
-            padding-left: 8%;
+            /* padding-left: 8%; */
             border-radius: 10px;
             -webkit-border-radius: 10px;
             -moz-border-radius: 10px;
