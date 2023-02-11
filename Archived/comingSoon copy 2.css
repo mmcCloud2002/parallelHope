@@ -1,0 +1,787 @@
+/*
+COLORS USED:
+
+#FFFFFF
+#B7E0ED
+#E4F0F4
+#F2F7F9
+#F6D432
+#FFFFFF 0.09
+#0B2F53
+#0232F6
+#D9D9D9
+#0228C3 - 0.68
+#EDC400
+
+• Header
+• Main
+• Footer
+-----
+• Modal:
+    • 2 columns
+
+
+
+.sideNav .centertext .count-down
+*/
+
+
+
+/* Setup Styles  */
+/* @font-face { 
+    font-family: 'mangoregular';
+    src: url('https://jordanr.co/fonts/__MACOSX/Mango_WebFontKit/mango-webfont.eot');
+    src: url('https://jordanr.co/fonts/__MACOSX/Mango_WebFontKit/mango-webfont.eot?#iefix') format('embedded-opentype'),
+         url('https://jordanr.co/fonts/__MACOSX/Mango_WebFontKit/mango-webfont.woff2') format('woff2'),
+         url('https://jordanr.co/fonts/__MACOSX/Mango_WebFontKit/mango-webfont.woff') format('woff'),
+         url('https://jordanr.co/fonts/__MACOSX/Mango_WebFontKit/mango-webfont.svg#mangoregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+} */
+
+
+/* General Styles */
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: #0042EE;
+    color: white;
+    font: 16px lato, sans-serif;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    /* overflow: hidden; */
+}
+a {
+    color: white;
+}
+li {
+    list-style-type: none;
+}
+
+/* Section Sizes */
+
+/* section {
+    background-color: #0232F6;
+} */
+/* main {
+    /* background: #0232F6; */
+    /* height: 80vh; */
+
+/* .main-container {
+    /* height: 100vh; */
+ */ */
+/* span.dot{
+    color: #0232F6 !important;
+    color: red;
+} */
+
+/* Custom Styles */
+/* .headliner{
+    /* position: absolute; */
+    /* justify-content: center; */
+    /* height: 50vh; 
+} */
+
+.eyebrow {
+    font-size: 1rem;
+    color: white;
+    letter-spacing: 6px;
+    text-align: center;
+}
+
+h1.headline1 {
+    font-family: 'mangoregular';
+    font-weight: 100;
+    letter-spacing: 0.2em;
+    color: #F6D432;
+    font-size: 5rem;
+    /* margin-left: -1.4em; */
+    text-align: center;
+}
+
+
+/* Clouds Styling */
+
+.cloud1 img {
+    height: 250px; 
+    margin-top: 3em;
+}
+
+.cloud2 img{
+    height: 257px;
+    width: auto;
+    /* margin-top: 8em; */
+    /* margin-right: 3.5em; */
+}
+
+
+
+/* Modal Styling - Left Column*/
+.modal-content {
+    margin-top: -1em;
+}
+.modal-header .btn-close {
+    color: white;
+}
+.modal .modal-body, .bs-modal-left {
+    height: 90vh;
+    overflow-y: hidden;
+    margin-top: 0vh;
+}
+.bs-modal-picture {
+    min-height: 30vh;
+}
+.modal .modal-body .bs-modal-picture img {
+    height: 100%;
+}
+.modal .modal-body .bs-modal-left {
+    background: #white;
+}
+.modal .modal-body .bs-modal-left .modal-header h1 {
+    font-size: 3em;
+    text-align: center;
+    padding: 0;
+    color: #000;
+}
+.modal .modal-body .bs-modal-left .modal-picture-copy {
+    font-size: 1em;
+    color: #000;
+    
+}
+
+
+/* Modal Styling - Right Column*/
+.bs-modal-right {
+    background-color: blue; 
+    height: 100vh;
+}
+.bs-column-form {
+    height: 100%;
+}
+.bs-column-form {
+    font-size: 1.2em;
+}
+.bs-modal-right .bs-column-form form input {
+    background-color: rgba(255, 255, 255, 0.3);
+    padding: 1em;
+    margin-bottom: 0.8em;
+    border: none;
+    outline: none;
+    color: white;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+}
+.bs-modal-right .bs-column-form form input:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+    transition: all 300ms;
+    -webkit-transition: all 300ms;
+    -moz-transition: all 300ms;
+    -ms-transition: all 300ms;
+    -o-transition: all 300ms;
+    transition-timing-function: ease-in-out;
+}
+.bs-modal-right .bs-column-form form input::placeholder {
+    color: #ddd;
+}
+.modal-header {
+    background-color: none;
+    border: none;
+    /* height: 1em; */
+    /* padding: 3em 0em; */
+}
+
+
+
+/* -------- */
+
+/* .modal-columns {
+    height: 4vh;
+}
+.modal-header {
+    background-color: none;
+    border: none;
+    /* height: 1em; */
+    /* padding: 3em 0em; */
+/* }
+.modal-body{
+    background-color: none;
+    height: 40vh;
+}
+
+
+Modal Right Column
+.modal-right-col {
+    background-color: #0232F6;
+    height: 90vh;
+}
+.right-close-icon {
+    background: none;
+    border: none;
+    margin-right: 5.5em;
+    margin-top: 1em;
+}
+.modal-right-col form input {
+    background: rgba(255, 255, 255, 0.5);
+}
+
+
+Modal Left Column
+.modal-left-col {
+    background-color: #fff;
+    height: 90vh;
+}
+.left-close-icon {
+    background: none;
+    border: none;
+    margin-left: 3em;
+    margin-top: 1em;
+}
+.left-close-icon img {
+    height: 30px;
+} */
+
+
+/* Countdown Styling */
+
+.countdown div {
+    display: inline-flex;
+    flex-direction: row;
+    line-height: 1;
+    padding: 20px;
+    font-size: 40px;
+    font-family: 'Lato', sans-serif;
+  }
+  
+  span {
+    display: block;
+    font-size: 20px;
+    color: white;
+  }
+  
+  
+  #days, #hours, #minutes, #seconds {
+    font-size: 2em;
+    color: white;
+    display: flex;
+    justify-content: center;
+  }
+
+
+
+/* Rocket Animation */
+
+footer {
+    position: relative;
+    bottom: 45vh;
+    height: 40vh;
+    z-index: -1;
+}
+footer .rocket-clouds {
+    position: relative;
+    top: 80vh;
+    display: flex;
+    justify-content: center;
+    z-index: 100;
+
+}
+footer video {
+    margin-top: 10vh;
+    height: 80vh;
+}
+
+
+
+
+
+.modal-left-col .modal-picture img {
+    height: 20vh;
+}
+.bs-modal-picture {
+    height: 100px;
+}
+    /* Custom Styles
+    .headliner{
+        margin-top: 3rem;
+    }
+
+    small.eyebrow {
+        font-size: 10rem;
+        color: white;
+        letter-spacing: 3px;
+    }
+
+    .headline1 {
+        font-family: 'mangoregular';
+        font-weight: 100;
+        letter-spacing: 0.2em;
+        color: #F6D432;
+        font-size: 1rem;
+    }
+
+    /* .countdown {} 
+
+    .main-container {
+        /* background: green; */
+        /* height: 30vh; */
+        /* width: 100vw; 
+    }
+
+
+    /* img.cloud{
+        height: 100px;
+    }  */
+
+    /* .cloud1 img{
+        height: 61px;
+        /* width: auto; */
+        /* margin-top: 6em; */
+    /* }
+
+    .cloud2 img{
+        /* height: 161px; 
+        width: auto;
+        margin-top: 8em;
+        margin-left: 3.5em;
+    }
+    
+
+
+} */
+
+#timer {
+    display: inline-block;
+    line-height: 1;
+    /* padding: 20px; */
+    font-size: 0.9em;
+    margin-top: -3em;
+}
+
+span {
+    display: inline-flex;
+    align-items: end;
+    font-size: 0.4em;
+    padding: 0 3px;
+    color: white;
+}
+
+/* Modal Styling */
+/* Modal: Right column */
+.modal-right-col{
+    height: 100vh;
+}
+.modal-right-col .modal-body {
+    /* background-color: red; */
+    display: flex;
+    justify-content: start;
+    padding-top: 6rem;
+    align-content: center;
+    font-size: 1.3em;
+}
+.modal-right-col form input {
+    display: flex;
+    flex-direction: column;
+}
+.modal-right-col form button i {
+    /* padding-left: 14.4em;
+    padding-right: 1em; */
+    /* width: 30px; */
+}
+.modal-form {
+    /* margin-top: -30vh; */
+}
+.modal-right-col form input::placeholder {
+    color: white;
+}
+.modal-right-col form input[type=submit] {
+    background-color: rgba(0, 0, 0, 0.2);
+    color: white;
+}
+.modal-right-col form button {
+    background-color: rgba(0,0, 0, 0.2);
+    /* padding: 0.5em 1.4em; */
+    color: white;
+    /* margin-bottom: 20rem; */
+}
+.mrc-copy {
+    padding-bottom: 4rem;
+    padding-left: 6rem;
+    text-align: left;
+}
+/* Modal Right Column FORM */
+.modal-right-col form input {
+    background-color: rgba(255,255, 255, 0.2);
+    padding: 1em 10em 1em 5em;
+    padding-left: 1.4em;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    margin-bottom: 1em;
+    border: none;
+    color: white;
+}
+.modal-right-col form input:hover {
+    background-color: rgba(255,255, 255, 0.4);
+    transition: all 200ms;
+    -webkit-transition: all 200ms;
+    -moz-transition: all 200ms;
+    -ms-transition: all 200ms;
+    -o-transition: all 200ms;
+    transition-timing-function: linear;
+}
+
+.modal-right-col form button:hover {
+    background-color: rgba(0,0, 0, 0.4);
+    color: white;
+    transition: all 300ms;
+    -webkit-transition: all 300ms;
+    -moz-transition: all 300ms;
+    -ms-transition: all 300ms;
+    -o-transition: all 300ms;
+    transition-timing-function: linear;
+}
+
+.modal-left-col .modal-picture img {
+    height: 10vh;
+}
+.bs-modal-picture {
+    height: 100px;
+}
+
+/* Modal: Left column */
+
+
+
+/* Cloud Styling */
+
+/* .cloud {
+    /* display: flex;
+    justify-content: space-between; *
+} */
+
+
+/* YouTube Button + Icon */
+.yt__button {
+    display: inline-flex;
+    height: 60px;
+    padding: 0;
+    background: rgba(0, 0, 0, 0.3);
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    overflow: hidden;
+    font-family: 'Lato', sans-serif;
+    font-size: 2.4em;
+    font-weight: 300;
+    cursor: pointer;
+}
+.yt__button:hover {
+    background: rgba(0, 0, 0, 0.5);
+}
+.yt__button:active {
+    background: rgba(0, 0, 0, 0.7);
+}
+.button__text, 
+.button__icon {
+    display: inline-flex;
+    align-items: center;
+    padding: 0 24px;
+    color: white;
+    height: 100%;
+}
+.button__icon {
+    font-size: 0.6em;
+}
+
+
+
+.modal-body-copy h1, .modal-body-copy p {
+    color: #000;
+}
+.modal-body-copy h1 {
+    text-align: center;
+    margin-right: 2em;
+}
+.modal-body-copy p {
+    font-size: 1.2em;
+    text-align: left;
+}
+
+
+
+/* @media only screen and (max-width: 480px) { */
+    @media only screen and (min-device-width: 320px) 
+    and (min-device-width: 375px) 
+    and (max-device-width: 812px) 
+    and (-webkit-min-device-pixel-ratio: 3) {
+    
+
+        /* MOB Custom Styles */
+    
+        .cloud1 img {
+            height: 4em;
+            opacity: 0.5;
+        }
+        small.eyebrow {
+            font-size: 1rem;
+            color: white;
+            letter-spacing: 3px;
+            margin-top: 30vh;
+        }
+        
+        h1.headline1 {
+            font-family: 'mangoregular';
+            font-size: 2.5rem;
+            font-weight: 100;
+            letter-spacing: 0.2em;
+            display: flex;
+            justify-content: center;
+            color: #F6D432;
+        }
+        
+        /* Countdown Styles */
+        /* .countdown {
+            /* color: blue; */
+            /* font-size: 3.25rem; */
+         */
+    
+        /* MOB Clouds Styling */
+        /* .cloud1 img{
+            /* height: 1em; */
+            /* position: absolute; */
+            /* margin-bottom: -9em;
+            z-index: 10;
+        }
+        */
+        
+        /* .cloud2 img{
+            /* height: 90px; */
+            /* position: absolute; */
+            /* left: 16rem; */
+            /* display: none; 
+        } */
+    
+        /* Modal Styling */
+        #exampleModal .modal{
+            height: 50vh;
+        }
+        .modal-columns {
+            height: 2em;
+        }
+        .modal-header {
+            /* background-color: #000; */
+            border: none;
+            height: 4em;
+            padding: 2em 0em;
+        }
+        .modal-body{
+            /* background-color: #333; */
+            height: 5vh;
+        }
+
+    
+        /* Modal Left Column */
+        .modal-left-col {
+            background-color: white;
+            color: #000;
+            height: 30vh;
+        }
+        .modal-left-col .container img {
+            height: 10em;
+        }
+        .modal-left-col .container .row {
+            margin-top: 1.3em;
+        }
+        .left-close-icon {
+            background: none;
+            /* visibility: hidden; */
+            /* border: none; */
+            margin-left: 4.76em;
+        }
+        .left-close-icon img {
+            height: 3em;
+            margin-left: -5em;
+            margin-top: 0em;
+        }
+        .modal-picture img {
+            height: 5vh;
+        }
+        .bs-modal-picture {
+            height: 100px;
+        }
+        /* Modal Right Column */
+        .modal-right-col {
+            background-color: #0232F6;
+            height: 70vh;
+            padding-top: 1em;
+            border: none;
+        }
+        /* .modal-column-2 .modal-header, .modal-column-2 .modal-header button {
+            /* background-color: red;
+            display: none;
+        } */
+        .right-close-icon {
+            background: none;
+            border: none;
+            margin-right: 4em;
+        }
+        .right-close-icon img {
+            filter: invert(100%)        ;
+            -webkit-filter: invert(100%)        ;
+            margin-left: 14em;
+            margin-top: 1em;
+        }
+        .modal-right-col p {
+            padding-bottom: 1em;
+            padding-right: 3em;
+        }
+        /* Modal Right Column FORM */
+        .modal-right-col form input, 
+        .modal-right-col form button:not(.yt__button) {
+            background-color: rgba(255,255, 255, 0.2);
+            padding: 1em 10em 1em 5em;
+            /* padding-left: 1.4em; */
+            border-radius: 10px;
+            -webkit-border-radius: 10px;
+            -moz-border-radius: 10px;
+            -ms-border-radius: 10px;
+            -o-border-radius: 10px;
+            margin-bottom: 1em;
+            border: none;
+            color: white;
+        }
+
+            /* Countdown Styling */
+
+            #timer {
+                display: inline-block;
+                line-height: 1;
+                /* padding: 20px; */
+                font-size: 3em;
+                margin-top: 3em;
+            }
+            
+            span {
+                display: inline-flex;
+                align-items: center;
+                font-size: 0.4em;
+                padding: 0 3px;
+                color: white;
+            }
+            
+            
+            #days, #hours, #minutes, #seconds {
+                font-size: 3.5em; 
+                display: inline-flex;
+                justify-content: center;
+            }
+
+
+            /* -------- */
+
+            .modal .modal-body, .bs-modal-left{
+                overflow-y: visible;
+                overflow-x: hidden;
+                height: 50vh;
+            }
+            /* Modal Styling */
+            /* Modal: Right column */
+            .modal-right-col{
+                height: 100vh;
+            }
+            .modal-right-col .modal-body {
+                /* background-color: red; */
+                display: flex;
+                justify-content: start;
+                padding-top: 6rem;
+                align-content: center;
+                font-size: 1.3em;
+            }
+            .modal-right-col form input {
+                display: flex;
+                flex-direction: column;
+            }
+            .modal-right-col form button i {
+                /* padding-left: 14.4em;
+                padding-right: 1em; */
+                /* width: 30px; */
+            }
+            .modal-form {
+                /* margin-top: -30vh; */
+            }
+            .modal-right-col form input::placeholder {
+                color: white;
+            }
+            .modal-right-col form input[type=submit] {
+                background-color: rgba(0, 0, 0, 0.2);
+                color: white;
+            }
+            .modal-right-col form button {
+                background-color: rgba(0,0, 0, 0.2);
+                /* padding: 0.5em 1.4em; */
+                color: white;
+                /* margin-bottom: 20rem; */
+            }
+            .mrc-copy {
+                padding-bottom: 4rem;
+                padding-left: 6rem;
+                text-align: left;
+            }
+            /* Modal Right Column FORM */
+            .modal-right-col form input {
+                background-color: rgba(255,255, 255, 0.2);
+                padding: 1em 20em 1em 5em;
+                padding-left: 2.4em;
+                border-radius: 10px;
+                -webkit-border-radius: 10px;
+                -moz-border-radius: 10px;
+                -ms-border-radius: 10px;
+                -o-border-radius: 10px;
+                margin-bottom: 1em;
+                border: none;
+                color: white;
+            }
+            .modal-right-col form input:hover {
+                background-color: rgba(255,255, 255, 0.4);
+                transition: all 200ms;
+                -webkit-transition: all 200ms;
+                -moz-transition: all 200ms;
+                -ms-transition: all 200ms;
+                -o-transition: all 200ms;
+                transition-timing-function: linear;
+            }
+        
+            .modal-right-col form button:hover {
+                background-color: rgba(0,0, 0, 0.4);
+                color: white;
+                transition: all 300ms;
+                -webkit-transition: all 300ms;
+                -moz-transition: all 300ms;
+                -ms-transition: all 300ms;
+                -o-transition: all 300ms;
+                transition-timing-function: linear;
+            }
+            .modal-left-col .modal-picture img {
+                height: 20vh;
+            }
+            .bs-modal-picture {
+                height: 100px;
+            }
+        }
